@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.scss";
 import GameBoard from "./components/GameBoard";
 import { Header } from "./components/Header";
