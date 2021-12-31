@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react'
 
 export const useData = () => {
-  const [isDark,setIsDark] = useState(false)
+  const [isDark,setIsDark] = useState(localStorage.getItem("theme")==="dark")
   useEffect(() => {
-    if (isDark) {
+    if(isDark) {
       localStorage.setItem("theme", "dark");
-      document.documentElement.setAttribute("data-theme", "dark");
     } else {
       localStorage.setItem("theme", "light");
-      document.documentElement.setAttribute("data-theme", "light");
     }
   }, [isDark])
   useEffect(() => {

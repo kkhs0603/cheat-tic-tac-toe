@@ -56,7 +56,7 @@ export default function CustomizedSwitches({ ...props }) {
         control={
           <MaterialUISwitch
             sx={{ m: 1 }}
-            defaultChecked={props.isDark}
+            checked={props.isDark}
             onChange={() => props.setIsDark(!props.isDark)}
           />
         }
