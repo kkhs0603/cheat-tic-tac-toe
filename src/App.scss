@@ -1,0 +1,158 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 0;
+}
+
+._dark {
+  height: 100vh;
+  background-color: #333333;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 10vw;
+  font-weight: bold;
+  line-height: 15vw;
+  height: 15vw;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0;
+  text-align: center;
+  width: 15vw;
+
+  &_dark {
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    border: 1px solid #999;
+    float: left;
+    font-size: 10vw;
+    font-weight: bold;
+    line-height: 15vw;
+    height: 15vw;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 0;
+    text-align: center;
+    width: 15vw;
+  }
+}
+
+.dummy {
+  background: #fff;
+  border: 0px solid #999;
+  float: left;
+  font-size: 10vw;
+  font-weight: bold;
+  line-height: 15vw;
+  height: 15vw;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0;
+  text-align: center;
+  width: 15vw;
+  &_dark {
+    color: white;
+    background: #333333;
+    border: 0px solid #999;
+    float: left;
+    font-size: 10vw;
+    font-weight: bold;
+    line-height: 15vw;
+    height: 15vw;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 0;
+    text-align: center;
+    width: 15vw;
+  }
+}
+
+.dummy:focus {
+  outline: none;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus .dummy:focus {
+  background: #ddd;
+}
+
+.game {
+  text-align: center;
+  &_dark {
+    text-align: center;
+    background-color: #333333;
+    color: white;
+  }
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.header {
+  padding: 15px;
+  background-color: paleturquoise;
+  display: flex;
+  justify-content: space-between;
+  &_dark {
+    padding: 15px;
+    background-color: rgb(32, 39, 129);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  line-height: 60px;
+  font-size: 20px;
+  &_dark {
+    line-height: 60px;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+.hidden-title {
+  color: paleturquoise;
+  &_dark {
+    color: white;
+  }
+}
+
+.reset {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  &_dark {
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
